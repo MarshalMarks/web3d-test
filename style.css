@@ -129,9 +129,9 @@ html {
 }
 
 #anything {
-    width: 80rem;
-    height: 80rem;
-    background-color: #000;
+    width: 60rem;
+    height: 160rem;
+    filter: invert() blur(4rem);
     position: absolute;
     transform: translate3d(200rem, -800rem, 0) rotateX(-90deg);
     opacity: 0;
