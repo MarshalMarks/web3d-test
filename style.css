@@ -84,6 +84,37 @@ html {
         inset 10rem 10rem 20rem #000;
 }
 
+.table-shadow {
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateZ(-45.99rem);
+    box-shadow: 0 0 70rem 60rem rgba(7, 12, 14, 0.6)
+}
+
+.leg-shadow {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    transform: translateZ(-45.99rem);
+    background-color: rgba(3, 6, 7, 0.7);
+    box-shadow: 0 0 5rem 5rem rgba(3, 6, 7, 0.7);
+}
+
+.leg-shadow-1 {
+    transform: translate3d(40rem, 28rem, -45.99rem);
+}
+
+.leg-shadow-2 {
+    transform: translate3d(-40rem, 28rem, -45.99rem);
+}
+
+.leg-shadow-3 {
+    transform: translate3d(0, -52rem, -45.99rem);
+}
+
 .pen {
     width: 2rem;
     height: 40rem;
@@ -97,7 +128,7 @@ html {
     box-shadow: -0.4rem 0.5rem 0.5rem rgba(50,50,50,.6);
 }
 
-#letter-1 {
+#letter {
     font-family: "Cedarville Cursive", cursive;
     background-color: #fff;
     width: 35rem;
@@ -107,24 +138,69 @@ html {
     box-shadow: 0 0 .1rem #aaa;
     font-size: 2.5rem;
     transform-origin: bottom;
+    transform: translateZ(0.01rem);
     transition: transform 1s;
 }
 
-#letter-1.change {
+#letter.change {
     transform: rotateX(-80deg) translateY(-5rem);
     transition: transform 1s 0.6s;
 }
 
-.btn {
+#letter-shadow {
+    width: 29rem;
+    height: 44rem;
+    position: absolute;
+    background-color: #00000066;
+    box-shadow: 0 0 0 3rem #00000066;
+    transition: 1s;
+}
+
+#letter-shadow.change {
+    background-color: #00000044;
+    box-shadow: 0 0 2rem 3rem #00000044;
+    transition: 1s 0.6s;
+}
+
+#button-arrow {
     width: 16rem;
     height: 16rem;
     position: absolute;
     top: 10rem;
     left: 10rem;
-    border-radius: 50% 50% 0 50%;
-    font-size: 2.5rem;
-    padding: 3rem;
-    border: #f55 dashed 0.4rem;
-    cursor: pointer;
     background-color: #fff;
+    border: rgb(37, 132, 255) solid 0.4rem;
+    border-radius: 50% 50% 8% 50%;
+    transform: rotateZ(-135deg);
+    transition: 1.6s;
+}
+
+#button-arrow.change {
+    border-radius: 8% 50% 50% 50%;
+    transition: 1.6s;
+}
+
+.btn {
+    width: 14rem;
+    height: 14rem;
+    position: absolute;
+    top: 11rem;
+    left: 11rem;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    padding: 2rem;
+    cursor: pointer;
+    border: rgb(161, 161, 161) solid 0.2rem;
+    background-color: #fff;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #ccc;
+}
+
+.btn:active {
+    background-color: #41bbe0;
+    border: rgb(93, 163, 255) solid 0.4rem;
+    transition: 0.04s;
 }
