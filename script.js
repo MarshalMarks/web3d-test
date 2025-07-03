@@ -4,6 +4,7 @@ changingElements.push(document.querySelector('#table'));
 changingElements.push(document.querySelector('#letter'));
 changingElements.push(document.querySelector('#letter-shadow'));
 changingElements.push(document.querySelector('#button-arrow'));
+changingElements.push(document.querySelector('#anything'));
 
 var isAtTable = false;
 

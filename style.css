@@ -128,6 +128,21 @@ html {
     box-shadow: -0.4rem 0.5rem 0.5rem rgba(50,50,50,.6);
 }
 
+#anything {
+    width: 80rem;
+    height: 80rem;
+    background-color: #000;
+    position: absolute;
+    transform: translate3d(200rem, -800rem, 0) rotateX(-90deg);
+    opacity: 0;
+    transition: 2s;
+}
+
+#anything.change {
+    opacity: 0.04;
+    transition: 12s 6s;
+}
+
 #letter {
     font-family: "Cedarville Cursive", cursive;
     background-color: #fff;
